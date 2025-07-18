@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sci-Fi Interface</title>
+  <link rel="stylesheet" href="Amagoon.css">
+</head>
+<body>
+
+    <canvas id="binaryCanvas"></canvas>
+
+  <div id="start-overlay">
+    <button id="start-btn">ENTER INTERFACE</button>
+  </div>
+
+  <div id="loader">
+    <div class="ring"></div>
+    <div class="terminal">
+      <p id="loading-text"></p>
+    </div>
+  </div>
+
+  <div id="main-content" style="display:none;">
+    <div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search the system...">
+  <button id="searchBtn">🔍</button>
+</div>
+
+    <h1>Welcome to the Main Interface</h1>
+    <p>This is the real site content after sci-fi boot.</p>
+    <footer>&copy; <span id="year"></span></footer>
+  </div>
+
+  <audio id="boot-sound" src="bootup.mp3" preload="auto"></audio>
+  <script src="Amagoon.js"></script>
+</body>
+</html>
