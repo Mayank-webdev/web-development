@@ -1,0 +1,472 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "popins";
+    background-color: #242424;
+    background: #000;
+    color: #727171;
+}
+
+/* Full Screen Video Background */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the whole background */
+    z-index: -1; /* Puts the video behind the content */
+}
+
+/* Content Styling */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #9af7ff;
+    text-decoration: transparent 100%;
+    text-shadow: #454545;
+    font-family: Verdana;
+}
+
+.content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: ease 1.1s;
+}
+
+.cta-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Horizontal Line Styling */
+hr {
+    border: 0;
+    height: 2px;
+    background: #3a3a3a;
+    margin: 20px 0;
+}
+
+/* Game List Section */
+.games-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.game-item {
+    background-color: #fff;
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    box-shadow: #323232;
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game-info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.download-btn {
+    background-color: #00094f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    animation-name: inherit;
+    border: 2px;
+}
+
+.download-btn:hover {
+    background-color: #323232;
+    color: #fff;
+    border:5px solid 00094f;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #030039;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border: 1px  solid white;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #07003d;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Profile Icon Styling */
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-icon {
+    width: 100px; /* Set the size of the profile icon */
+    height: 100px; /* Set the size of the profile icon */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%; /* Makes the icon circular */
+    border: 3px solid #000000; /* Optional: adds a border around the icon */
+}
+
+.profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circle area without distortion */
+}
+
+.profile p {
+    font-size: 18px;
+    color: #000000;
+}
+
+#projection
+{
+    font-size: xx-large;
+}
+
+.m2
+{
+    border-radius:50%;
+    border:2px solid aliceblue;
+    cursor: pointer;
+}
+
+.m2:hover
+{
+    border: 2px solid rgb(67, 67, 67);
+}
+
+/* Navigation Button */
+.nav-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header {
+        display: none;
+        text-align: center;
+    }
+    header.show-menu {
+        display: block;
+    }
+}
+
+
+/* 🎮 Responsive Navigation Button */
+.nav-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* 🔝 Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+}
+
+/* 🔍 Game Search Bar */
+.game-search {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+/* 🎮 Navigation Button */
+.nav-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+
+/* ⭐ Game Rating */
+.rating {
+    margin-top: 10px;
+}
+.rating span {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* 🎥 Game Trailer Popup */
+.trailer-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9999;
+}
+.trailer-content {
+    position: relative;
+}
+.close-popup {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+}
+
+/* 📊 Download Progress Bar */
+.progress-bar {
+    position: fixed;
+    bottom: 10px;
+    left: 10%;
+    width: 0%;
+    height: 10px;
+    background: limegreen;
+    transition: width 0.5s;
+}
+
+/* 👥 Live User Counter */
+.user-counter {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* 🌙 Dark Mode - Fixing Text Visibility */
+.dark-mode {
+    background: #121212;
+    color: #ffffff; /* White text for better contrast */
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode p, 
+.dark-mode a {
+    color: #ffffff !important; /* Ensuring all text is white */
+}
+
+.dark-mode .download-btn {
+    background: #ff9800; /* Orange color for better visibility */
+    color: #000000; /* Black text */
+    border: 1px solid #fff;
+}
+
+.dark-mode .game-item {
+    background: #222; /* Darker background for better contrast */
+    border: 1px solid #ffffff30;
+}
+
+.dark-mode .nav-toggle,
+.dark-mode .dark-mode-toggle,
+.dark-mode .back-to-top {
+    background: #ff9800; /* Bright color for better visibility */
+    color: #000;
+}
+
+/* 🌟 Star Rating in Dark Mode */
+.dark-mode .rating span {
+    color: yellow;
+}
+
+/* 🎥 Game Trailer Popup Fix */
+.dark-mode .trailer-popup {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+/* 👥 Live User Counter Fix */
+.dark-mode .user-counter {
+    background: #ff9800;
+    color: #000;
+}
+
+
+/* 🌐 Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* 🌙 Dark Mode Toggle Button */
+#darkModeToggle {
+    background: #ff9800;
+    color: black;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
